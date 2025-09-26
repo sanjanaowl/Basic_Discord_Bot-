@@ -258,7 +258,7 @@ async def check_roles_error(ctx, error):
 
 
 @bot.command()
-async def hey_ai(ctx, *c: tuple):
+async def hey_ai(ctx, *c):
 
     if len(c) == 0:
         await ctx.send('hello... to use !hey_ai command do "!hey_ai message"')
@@ -282,3 +282,4 @@ async def hey_ai(ctx, *c: tuple):
 
 
 bot.run(token, log_handler=handler, log_level=logging.DEBUG)
+
